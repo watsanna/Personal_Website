@@ -1,0 +1,117 @@
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0;
+  box-sizing: border-box;
+  padding-top: 50px;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Page content */
+.welcome-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4vw;
+}
+
+.subtitle {
+  display: block;
+  font-family: 'Allura', cursive;
+  font-size: 2vw;
+}
+
+.profile-pic-container img {
+  width: 16vw;
+  max-width: 100%; 
+  height: auto;
+  border: 5px solid rgba(176, 91, 38, 0.768);
+  box-shadow: 0 0 50px rgba(220, 105, 33, 0.768); 
+  transform: rotateY(15deg); 
+  transition: transform 0.3s ease; 
+  margin-bottom: 2em;
+  border-radius: 5%;
+}
+
+p {
+  width: 80vw;
+  max-width: 100%; 
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+.translucent-box {
+  margin: auto;
+  background: rgba(255, 255, 255, 0.355); /* White background with transparency */
+  border-radius: 15px; 
+  padding: 20px;
+  width: 70%;
+  max-width: 100%; /* Prevent the box from overflowing on smaller screens */
+  height: auto; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 3em;
+}
+
+.translucent-box p {
+  color: #000000; /* Black text color  #330641*/
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  width: 100%;
+  font-size: 1vw;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  .welcome-title {
+    font-size: 6vw; /* Adjust font size for smaller screens */
+  }
+
+  .subtitle {
+    font-size: 4vw; /* Increase size for readability */
+  }
+
+  .profile-pic-container img {
+    width: 30vw; /* Increase image size on smaller screens */
+  }
+
+  .translucent-box {
+    width: 90%; /* Reduce width for better fit */
+    padding: 15px;
+  }
+
+  .translucent-box p {
+    font-size: 3vw; /* Increase text size for readability */
+  }
+
+  p {
+    font-size: 4vw; /* Adjust paragraph text size */
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-title {
+    font-size: 8vw; /* Further adjust font size for very small screens */
+  }
+
+  .subtitle {
+    font-size: 5vw;
+  }
+
+  .profile-pic-container img {
+    width: 50vw; /* Increase image size more on very small screens */
+  }
+
+  .translucent-box p {
+    font-size: 4vw;
+  }
+
+  p {
+    font-size: 5vw;
+  }
+}

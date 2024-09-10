@@ -1,0 +1,141 @@
+
+.translucent-box {
+  margin: auto;
+  background: rgba(255, 255, 255, 0.355); 
+  border-radius: 15px; 
+  padding: 20px;
+  width: 70%;
+  max-width: 100%; 
+  height: auto; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 3em;
+}
+
+.resume-actions {
+  text-align: center; 
+  margin: 20px 0; 
+}
+
+
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+  align-items: center;
+}
+
+
+.slides {
+  display: flex;
+  flex-direction: row; 
+  border-radius: 10px;
+  overflow: hidden;
+  
+}
+
+
+.slide {
+  list-style-type: none;
+  height: 400px;
+  width: 5%; 
+  overflow: hidden;
+  transition: all 500ms linear;
+}
+
+
+.brand1 { background-color: #8f158d73;}
+.brand2 { background-color: #6f106d7a; }
+.brand3 { background-color: #570c5678; }
+.brand4 { background-color: #3b083a78; }
+
+
+
+.slide a.action {
+  display: block;
+  height: 100%;
+  position: relative;
+  text-decoration: none;
+}
+
+.slide a.action span {
+  font-weight: 600;
+  color: #fff;
+  transform: rotate(270deg);
+  position: absolute;
+  top: 10%;
+  width: 140px;
+  left: -30%;
+  height: 100px;
+}
+
+
+.slide-content {
+  display: block;
+  width: 720px;
+  color: #fff;
+  overflow-y: auto;
+  direction: rtl;
+  height: 400px;
+}
+
+
+
+.active {
+  width: 80%; 
+}
+
+
+.active a.action {
+  display: none;
+}
+
+
+.container-skills {
+  width: fit-content;
+  max-width: 80%; 
+  padding: 7px;
+  display: inline-block; 
+  margin: 0 auto; 
+  box-shadow: 0 0 20px rgba(220, 105, 33, 0.768); 
+  text-align: center; 
+}
+
+
+
+
+
+
+@media (max-width: 480px) { 
+  .slides {
+    flex-direction: column; 
+    display: block;
+}
+.slide {
+    width: 100%; 
+    margin-bottom: 15px;
+    height: auto; 
+    border-radius: 10px;
+}
+.slide-content {
+    width: 100%!important; 
+    padding: 20px; 
+    font-size: 90%; 
+}
+.slide a.action span {
+    transform: none; 
+    position: relative; 
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+}
+
+.slide a.action {
+    padding: 10px; 
+    display: block;
+    text-align: center; 
+}
+}
+
+
+
