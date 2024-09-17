@@ -16,13 +16,13 @@ const Footer = () => {
 
      
       <div className="flex justify-center gap-6 mb-4">
-        <a href="#" className="text-purple-500 text-6xl md:text-4xl lg:text-3xl hover:text-orange-600 transition duration-300">
+        <a href="#https://www.linkedin.com/in/watsanna/" className="text-purple-500 text-6xl md:text-4xl lg:text-3xl hover:text-orange-600 transition duration-300">
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <a href="#" className="text-purple-500 text-6xl md:text-4xl lg:text-3xl hover:text-orange-600 transition duration-300">
+        <a href="#https://www.instagram.com/lijahara/" className="text-purple-500 text-6xl md:text-4xl lg:text-3xl hover:text-orange-600 transition duration-300">
           <FontAwesomeIcon icon={faInstagram} />
         </a>
-        <a href="#" className="text-purple-500 text-6xl md:text-4xl lg:text-3xl hover:text-orange-600 transition duration-300">
+        <a href="#https://github.com/watsanna?tab=repositories" className="text-purple-500 text-6xl md:text-4xl lg:text-3xl hover:text-orange-600 transition duration-300">
           <FontAwesomeIcon icon={faGithub} />
         </a>
       </div>
