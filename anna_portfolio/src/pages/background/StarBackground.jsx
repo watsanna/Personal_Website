@@ -109,5 +109,6 @@ const StarBackground = () => {
   return <canvas id="starsCanvas"></canvas>;
 };
 
+
 export default StarBackground;
 

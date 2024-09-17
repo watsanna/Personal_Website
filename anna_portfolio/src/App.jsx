@@ -9,27 +9,30 @@ import About from './pages/About/about';
 import Tech from './pages/Tech/tech';
 import Dance from './pages/Dance/dance';
 import Contact from './pages/Contact/contact';
-
-
+import Mode from './pages/background/mode';
 
 const App = () => (
-  <Router>
-    < StarBackground />
-    <Navbar />
+  <>
 
-    <div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/tech" element={<Tech />} />
-        <Route path="/dance" element={<Dance />} />
-        <Route path="/contact" element={<Contact />} />
+    <Mode />
 
-      </Routes>
-    </div>
+    <Router>
+      < StarBackground />
+      <Navbar />
 
-   <Footer />
-  </Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/tech" element={<Tech />} />
+          <Route path="/dance" element={<Dance />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+
+      <Footer />
+    </Router>
+  </>
 );
 
 export default App;

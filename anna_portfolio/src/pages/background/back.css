@@ -1,21 +1,15 @@
 body {
     margin: 0;
+}
+
+body.dark-mode {
     background: radial-gradient(circle at 50% 50%, rgba(255, 0, 150, 0.2) 10%, rgba(0, 150, 255, 0.3) 60%, rgba(255, 98, 0, 0.5) 100%), 
     radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 60%);
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
-color{
-    color: #e17734c4;
-}
-
-@media (max-width: 768px) {
-    body {
-        background: radial-gradient(circle at 50% 50%, rgba(255, 0, 150, 0.2) 0%, rgba(0, 150, 255, 0.3) 60%, rgba(255, 98, 0, 0.5) 100%), 
-    radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 60%);
-
-    }
-
+body.light-mode {
+    background: radial-gradient(circle at 50% 50%, #e4b1e7, #bbc7f8, #f5beb0);
+   
 }
