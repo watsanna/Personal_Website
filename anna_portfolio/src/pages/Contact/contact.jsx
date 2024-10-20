@@ -6,6 +6,7 @@ import './contact.css';
 const Contact = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('');
     const [paragraph, setParagraph] = useState('');
   
     const handleSubmit = (e) => {
@@ -13,49 +14,54 @@ const Contact = () => {
       
       console.log("Name:", name);
       console.log("Email:", email);
+      console.log("Subject:", subject);
       console.log("Message:", paragraph);
   
       
       setName('');
       setEmail('');
-      setSubjet('');
+      setSubject('');
       setParagraph('');
     };
   
     return (
     <div> 
-          <h2>Let's Connect</h2>
+          <h1>Let's Connect</h1>
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <label>
                 Enter your name:
-                <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+                
               </label>
+              <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
             </div>
             
             <div className="form-group">
               <label>
                 Enter your email:
-                <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+               
               </label>
+              <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
             </div>
   
             <div className="form-group">
               <label>
-                Enter your subject:
-                <input type="subject" value={email} onChange={(e) => setEmail(e.target.value)} />
+                Enter your subject:   
+                
               </label>
+              <input type="subject" value={subject} onChange={(e) => setSubject(e.target.value)} />
             </div>
             
             <div className="form-group">
               <label>
                 Message Box:
-                <textarea value={paragraph} onChange={(e) => setParagraph(e.target.value)} />
+                
               </label>
+              <textarea value={paragraph} onChange={(e) => setParagraph(e.target.value)} />
             </div>
   
           
-            <button type="submit" className='button'>Send Message</button>
+            <button type="submit" className='btn'>Send Message</button>
           
   
           </form>

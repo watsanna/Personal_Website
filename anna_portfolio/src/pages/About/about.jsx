@@ -4,13 +4,14 @@ import resume from './Annaliese_Watson_Resume.pdf.pdf';
 
 const About = () => {
   
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+ 
 
 const toggleAccordion = (index) => {
   setActiveIndex(activeIndex === index ? null : index);
 };
 
-  
   const [isPdfOpen, setIsPdfOpen] = useState(false);
 const [selectedPdf, setSelectedPdf] = useState(null);
 
@@ -69,7 +70,7 @@ const handleClosePdf = () => {
       <div className='container'>
         <div className='container-slides'>
           <ul className='slides'>
-            <li className={`slide brand1 ${activeIndex === 0 ? 'active' : ''}`}>
+            <li className={`slide brand1 ${activeIndex === 0   ? 'active' : ''}`}>
               <a href="#" className="action" onClick={(e) => { e.preventDefault(); toggleAccordion(0); }}>
                 <span>Education</span>
               </a>
@@ -145,7 +146,7 @@ const handleClosePdf = () => {
               </a>
               {activeIndex === 2 && (
                 <div className="slide-content">
-                  <h2>Core Skills</h2>
+                  <h2 className="text-white-900 font-serif text-[4vw] md:text-[2vw] lg:text-[1vw]">Core Skills</h2>
 
                   
 
@@ -158,7 +159,7 @@ const handleClosePdf = () => {
                   <p className='container-skills'>Risk Management</p>
                   
 
-                  <h2>Technical Skills</h2>
+                  <h2 className="text-white-900 font-serif text-[4vw] md:text-[2vw] lg:text-[1vw]"> Technical Skills</h2>
 
                   <p className='container-skills'>HTML</p>
                   <p className='container-skills'>CSS</p>
@@ -208,7 +209,7 @@ const handleClosePdf = () => {
 
                 <div className="slide-content">
 
-                  <h2>Research Projects</h2>
+                  <h2 className="text-white-900 font-serif text-[4vw] md:text-[2vw] lg:text-[1vw]">Research Projects</h2>
 
                   <div className="container-skills"> 
                   <p>
@@ -219,7 +220,7 @@ const handleClosePdf = () => {
                      <li>Digital Foundation Recommender ('23)</li> <br />
                      
                      
-                     <button class="button">View More Details on Projects</button>
+                     <button class="btn">View More Details on Projects</button>
 
                   
                   
@@ -229,18 +230,18 @@ const handleClosePdf = () => {
 
                 
 
-                <h2>Dance</h2>
+                <h2 className="text-white-900 font-serif text-[4vw] md:text-[2vw] lg:text-[1vw]">Dance</h2>
                 <div className="container-skills"> 
                   <p>
                   <li> Kean Dance Theatre - President ('23-'25) Treasurer ('21-'23) </li> <br />
                   <li> Lyn Dance Company </li> <br />
                   
-                  <button class="button">View More Details on Dance Experience</button>
+                  <button class="btn">View More Details on Dance Experience</button>
                 </p>
                 </div>
                  
 
-                <h2>Other</h2>
+                <h2 className="text-white-900 font-serif text-[4vw] md:text-[2vw] lg:text-[1vw]">Other</h2>
                 <div className="container-skills"> 
                   <p>
                   <li> American Sign Language - Beginner </li> <br />

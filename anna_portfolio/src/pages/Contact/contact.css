@@ -1,0 +1,57 @@
+
+form {
+    padding: 20px;
+    
+  }
+  
+  .form-group {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  label {
+    font-size: 1.2rem;
+    color: #fff; 
+    margin-bottom: 8px;
+    display: block;
+    
+  }
+  
+
+  input[type="text"],
+  input[type="email"],
+  input[type="subject"],
+  textarea {
+    background: rgba(255, 255, 255, 0.2); 
+    color: #000; 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+
+  input[type="text"], input[type="email"], input[type="subject"], textarea {
+    margin-bottom: 15px; 
+    max-width: 450px;
+    min-width: 250px;
+    width: 100%;
+  }
+  
+  textarea {
+    min-height: 120px; 
+    resize: vertical; 
+  }
+  
+  
+  input:focus, textarea:focus {
+    border-color: #ccc;
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+ 
+  
+  

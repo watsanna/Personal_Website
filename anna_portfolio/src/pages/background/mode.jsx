@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
 
 const Mode = () => {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  
+
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const body = document.body;
+    body.classList.add('dark-mode'); 
+    return true; 
+  });
 
   const toggleMode = () => {
     const body = document.body;
@@ -18,9 +24,9 @@ const Mode = () => {
   return (
     <div className="absolute top-5 right-5 mt-5">
       <label className="flex items-center cursor-pointer">
-        <div className="mr-3 text-gray-700 font-bold">
+        {/*<div className="mr-3 text-gray-700 font-bold">
           {isDarkMode ? 'DARK' : 'LIGHT'}
-        </div>
+        </div>*/}
         <div className="relative">
           <input type="checkbox" className="sr-only" checked={isDarkMode} onChange={toggleMode} />
           <div className="block bg-gray-600 w-14 h-8 rounded-full"></div>
