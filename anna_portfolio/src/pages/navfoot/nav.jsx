@@ -35,11 +35,11 @@ const Navbar = () => {
             Dance Journey
           </Link>
         </li>
-        <li className="hidden md:block">
+       {/*} <li className="hidden md:block">
           <Link to="/contact" className="text-black font-bold px-6 py-3 hover:text-white flex items-center">
             Contact Me
           </Link>
-        </li>
+        </li>*/}
         
         <li className="relative md:hidden">
           <button
