@@ -48,6 +48,12 @@ const handleClosePdf = () => {
   >
     View Resume
   </button>
+
+  <a href={resume} download="Annaliese_Watson.pdf" className="btn">
+  Download Resume
+</a>
+
+
 </div>
 
 
