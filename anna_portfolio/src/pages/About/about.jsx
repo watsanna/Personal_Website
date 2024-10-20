@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './about.css'; 
 import resume from './Annaliese_Watson_Resume.pdf.pdf';
 
+
 const About = () => {
   
   const [activeIndex, setActiveIndex] = useState(0);
@@ -57,10 +58,18 @@ const handleClosePdf = () => {
 </div>
 
 
-{isPdfOpen && (
+ {isPdfOpen && (
   <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-    <div className=" iframe-container bg-white p-6 rounded-lg shadow-lg w-3/4 md:w-1/2">
-      <iframe src={selectedPdf} type="application/pdf" className="w-full h-96" />
+    <div className="iframe-container bg-white p-6 rounded-lg shadow-lg w-full md:w-3/4 h-full md:h-[90vh]">
+      <div className="responsive-iframe-wrapper">
+        <iframe
+          src={selectedPdf}
+          type="application/pdf"
+          className="responsive-iframe w-full h-full"
+          frameBorder="0"
+          scrolling="auto"
+        />
+      </div>
       <button
         className="mt-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
         onClick={handleClosePdf}
@@ -69,7 +78,7 @@ const handleClosePdf = () => {
       </button>
     </div>
   </div>
-)}
+)} 
 
 
 
