@@ -17,6 +17,10 @@ import dw from './dance_website.pdf';
 const Tech = () => {
   const [isPdfOpen, setIsPdfOpen] = useState(false);
   const [selectedPdf, setSelectedPdf] = useState(null);
+  
+
+ 
+
 
   const handleButtonClick = (pdf) => {
     setSelectedPdf(pdf);
@@ -27,6 +31,9 @@ const Tech = () => {
     setIsPdfOpen(false);
     setSelectedPdf(null);
   };
+
+  
+   
 
   return (
     <div className="flex justify-center w-full">
@@ -178,8 +185,9 @@ const Tech = () => {
       
       {isPdfOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg w-3/4 md:w-1/2">
-            <embed src={selectedPdf} type="application/pdf" className="w-full h-96" />
+          <div className=" iframe-container bg-white p-6 rounded-lg shadow-lg w-3/4 md:w-1/2">
+           <iframe src={selectedPdf} type="application/pdf" className="w-full h-96" />
+            
             <button
               className="mt-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
               onClick={handleClosePdf}
