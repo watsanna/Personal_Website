@@ -65,11 +65,11 @@ const Navbar = () => {
                   Dance Journey
                 </Link>
               </li>
-              <li>
+              {/*<li>
                 <Link to="/contact" className="block px-4 py-2 text-center text-black hover:bg-orange-500" onClick={closeDropdown}>
                   Contact Me
                 </Link>
-              </li>
+              </li> */}
             </ul>
           )}
         </li>
